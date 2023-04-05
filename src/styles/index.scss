@@ -1,0 +1,17 @@
+@import './list.scss';
+@import './common.scss';
+@import './list-item.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
