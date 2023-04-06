@@ -1,4 +1,5 @@
-const baseUrl = `https://6416cdc647092b8b613500f9.mockapi.io/api/v1/tasks`;
+import "core-js/modules/es.promise.js";
+const baseUrl = "https://6416cdc647092b8b613500f9.mockapi.io/api/v1/tasks";
 export const createTask = taskData => fetch(baseUrl, {
   method: 'POST',
   headers: {
@@ -6,14 +7,14 @@ export const createTask = taskData => fetch(baseUrl, {
   },
   body: JSON.stringify(taskData)
 });
-export const updateTask = (taskId, taskData) => fetch(`${baseUrl}/${taskId}`, {
+export const updateTask = (taskId, taskData) => fetch("".concat(baseUrl, "/").concat(taskId), {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json;charset=utf-8'
   },
   body: JSON.stringify(taskData)
 });
-export const deleteTask = taskId => fetch(`${baseUrl}/${taskId}`, {
+export const deleteTask = taskId => fetch("".concat(baseUrl, "/").concat(taskId), {
   method: 'DELETE'
 });
 export const getTasksList = () => {

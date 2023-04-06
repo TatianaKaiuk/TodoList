@@ -1,3 +1,5 @@
+import "core-js/modules/es.array.sort.js";
+import "core-js/modules/web.dom-collections.iterator.js";
 import { getItem } from './storage.js';
 const listElem = document.querySelector('.list');
 const compareTasks = (a, b) => {
