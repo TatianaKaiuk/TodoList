@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "copy:html": "cp ./src/index.html ./dist/index.html",
-    "build:scripts": "webpack ",
+    "build:scripts": "webpack -p",
     "clean": "rm -rf ./dist",
     "build": "npm-run-all clean build:* copy:*",
     "watch": "webpack --mode=development --devtool eval-source-map -w"
