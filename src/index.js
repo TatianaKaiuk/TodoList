@@ -1,10 +1,10 @@
-import { initTodoListHandlers } from './list/todoList.js';
-import { renderTasks } from './list/render.js';
-import { getTasksList } from './list/tasksGateway.js';
-import { setItem } from './list/storage.js';
+import { initTodoListHandlers } from './list/todoList';
+import { renderTasks } from './list/render';
+import { getTasksList } from './list/tasksGateway';
+import { setItem } from './list/storage';
 import './index.scss';
 
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener('DOMContentLoaded', () => {
   getTasksList().then((tasksList) => {
     setItem('tasksList', tasksList);
     renderTasks();

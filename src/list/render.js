@@ -1,4 +1,4 @@
-import { getItem } from './storage.js';
+import { getItem } from './storage';
 import './list.scss';
 
 const listElem = document.querySelector('.list');
@@ -39,7 +39,7 @@ const createListItem = ({ text, done, id }) => {
 
   const textElem = document.createElement('span');
   textElem.setAttribute('data-id', id);
-  if(done) {
+  if (done) {
     textElem.classList.add('list-item__text');
   }
   textElem.textContent = text;

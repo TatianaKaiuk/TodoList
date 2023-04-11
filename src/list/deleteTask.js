@@ -1,6 +1,6 @@
-import { renderTasks } from './render.js';
-import { setItem } from './storage.js';
-import { deleteTask, getTasksList } from './tasksGateway.js';
+import { renderTasks } from './render';
+import { setItem } from './storage';
+import { deleteTask, getTasksList } from './tasksGateway';
 
 export const clickOnDeleteBtn = (e) => {
   const taskId = e.target.closest('.list-item__delete-btn').dataset.id;
