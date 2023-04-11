@@ -54,7 +54,7 @@ module.exports = (env, argv) => {
     config.plugins.push(
       new MiniCssExtractPlugin({
         filename: '[name].css',
-      })
+      }),
     );
   }
   return config;
